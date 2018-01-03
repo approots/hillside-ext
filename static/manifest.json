@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Getting started example",
+  "description":
+    "This extension allows the user to change the background color of the current page.",
+  "version": "1.0",
+  "page_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html",
+    "default_title": "ReactJS Super-Powered"
+  },
+  "permissions": ["activeTab", "storage", "notifications"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://example.com/*",
+        "http://example.com/*",
+        "http://localhost:3000/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

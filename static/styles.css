@@ -1,0 +1,39 @@
+.app {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #c3c3f0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+input.invalid {
+  background-color: #f7a7a7;
+  border: 2px solid #f74848;
+}
+
+.input-button-combo input {
+  float: left;
+}
+
+.input-button-combo button {
+  float: left;
+  width: 100px;
+  margin-right: 1em;
+}
+
+input.disabled {
+  background-color: #ddd;
+  text-decoration: line-through;
+  color: #808080;
+}
+
+/* .input-button-combo {
+  display: flex;
+  width: 200px;
+}
+.input-button-combo input {
+  flex-grow: 2;
+} */
